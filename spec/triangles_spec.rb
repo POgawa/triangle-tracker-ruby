@@ -16,4 +16,19 @@ describe(Triangles) do
     expect(new_triangle.triangle_type()).to(eq("equilateral"))
     end
   end
+
+  describe("tiangle_type") do
+    it('takes the sides of the triangle and checks to see if it is scalene') do
+      new_triangle = Triangles.new(3, 4, 5)
+      expect(new_triangle.triangle_type()).to(eq("scalene"))
+
+    end
+  end
+
+
+
+
+
+
+
 end
