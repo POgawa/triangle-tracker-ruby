@@ -12,15 +12,16 @@ class Triangles
   end
 
   def triangle_type
-
+    if is_triangle?
       if @side1 == @side2 && @side2 == @side3
         "equilateral"
       elsif @side1 == @side2 || @side1 == @side3 || @side2 == @side3
         "isosceles"
-      else@side1 != (@side3) || @side2 != @side3
+      else
         "scalene"
       end
+    else
+      "Is not a triangle"
+    end
   end
-
-
 end
